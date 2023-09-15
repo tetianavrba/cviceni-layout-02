@@ -17,34 +17,38 @@ aside {
   padding: 20px;
 }
 
-header > :first-child,
-footer > :first-child,
-article > :first-child,
-nav > :first-child,
-aside > :first-child {
+header> :first-child,
+footer> :first-child,
+article> :first-child,
+nav> :first-child,
+aside> :first-child {
   margin-top: 0;
 }
 
-header > :last-child,
-footer > :last-child,
-article > :last-child,
-nav > :last-child,
-aside > :last-child {
+header> :last-child,
+footer> :last-child,
+article> :last-child,
+nav> :last-child,
+aside> :last-child {
   margin-bottom: 0;
 }
 
 .hlavicka {
   background-color: #2ecc71;
 }
+
 .menu {
   background-color: #e74c3c;
 }
+
 .obsah {
   background-color: #f1c40f;
 }
+
 .reklama {
   background-color: #8e44ad;
 }
+
 .paticka {
   background-color: dodgerblue;
 }
@@ -57,3 +61,56 @@ aside > :last-child {
 	- 640px
 	- 1000px
 */
+@media screen and (min-width: 640px) {
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hlavicka {
+    width: 100%;
+  }
+
+  .menu {
+    width: 30%;
+  }
+
+  .obsah {
+    width: 70%;
+  }
+
+  .reklama {
+    width: 100%;
+  }
+
+  .paticka {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hlavicka {
+    width: 100%;
+  }
+
+  .menu {
+    width: 20%;
+  }
+
+  .obsah {
+    width: 60%;
+  }
+
+  .reklama {
+    width: 20%;
+  }
+
+  .paticka {
+    width: 100%;
+  }
+}
